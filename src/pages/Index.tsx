@@ -23,11 +23,12 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="relative w-full pt-20">
+      {/* Hero Banner - Desktop */}
+      <section className="relative w-full pt-20 hidden md:block">
         <div className="relative w-full">
           <img 
-            src="https://cdn.poehali.dev/files/Баннер.jpg" 
-            alt="Баннер" 
+            src="https://cdn.poehali.dev/files/Баннер веб - 1.jpeg" 
+            alt="Баннер MyFinePlan" 
             className="w-full h-auto object-cover"
           />
           <div className="absolute inset-0 flex items-center">
@@ -45,7 +46,7 @@ export default function Index() {
                 <div className="flex flex-wrap gap-4 pt-3">
                   <Button 
                     size="lg" 
-                    className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-sm px-6 py-5 uppercase tracking-wide"
+                    className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-sm px-6 py-5 uppercase tracking-wide rounded-lg"
                     asChild
                   >
                     <a href="https://myfineplan.ru/page/konstruktor-format" target="_blank" rel="noopener noreferrer">
@@ -55,7 +56,7 @@ export default function Index() {
                   <Button 
                     size="lg" 
                     variant="outline" 
-                    className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-sm px-6 py-5 uppercase tracking-wide"
+                    className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-sm px-6 py-5 uppercase tracking-wide rounded-lg"
                     asChild
                   >
                     <a href="https://myfineplan.ru/collection/v-nalichii" target="_blank" rel="noopener noreferrer">
@@ -69,21 +70,94 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-[#ECE8E6]">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-semibold text-[#2E2E2C] text-center mb-12">Для кого наши блокноты</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+      {/* Hero Banner - Mobile */}
+      <section className="block md:hidden pt-20">
+        <div className="w-full">
+          <img 
+            src="https://cdn.poehali.dev/files/30D81FB3-0FF8-4D4E-A353-0386520942A4_1_201_a.jpeg" 
+            alt="Баннер MyFinePlan" 
+            className="w-full h-auto object-cover"
+          />
+          <div className="bg-[#F9F9F7] px-6 py-8 text-center">
+            <h1 className="text-lg font-semibold text-[#2E2E2C] leading-tight uppercase mb-4">
+              СОБЕРИТЕ СВОЙ ИДЕАЛЬНЫЙ БЛОКНОТ.<br />
+              И МЕНЯЙТЕ НАПОЛНЕНИЕ,<br />
+              КОГДА МЕНЯЕТСЯ ЖИЗНЬ.
+            </h1>
+            <p className="text-sm text-[#2E2E2C]/85 leading-relaxed mb-6">
+              Кожаные обложки и сменное наполнение ручной работы.<br />
+              Один блокнот вместо 10, который подстраивается под вас.
+            </p>
+            <div className="flex flex-col gap-3 max-w-sm mx-auto">
+              <Button 
+                size="lg" 
+                className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-xs px-4 py-3.5 uppercase tracking-wide rounded-lg w-full"
+                asChild
+              >
+                <a href="https://myfineplan.ru/page/konstruktor-format" target="_blank" rel="noopener noreferrer">
+                  СОБРАТЬ БЛОКНОТ
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-xs px-4 py-3.5 uppercase tracking-wide rounded-lg w-full"
+                asChild
+              >
+                <a href="https://myfineplan.ru/collection/v-nalichii" target="_blank" rel="noopener noreferrer">
+                  ГОТОВЫЕ РЕШЕНИЯ
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Для кого блок */}
+      <section className="w-screen relative left-1/2 right-1/2 -mx-[50vw] py-16 px-6 bg-[#ECE8E6]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#2E2E2C] text-center mb-12 md:mb-16">FinePlan подойдёт вам, если:</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
             {[
-              { icon: "Briefcase", title: "Для бизнеса", desc: "Идеальный инструмент для встреч, планирования и заметок" },
-              { icon: "Heart", title: "Для творчества", desc: "Запечатлейте идеи, зарисовки и вдохновение" },
-              { icon: "Gift", title: "Для подарка", desc: "Уникальный и запоминающийся презент для близких" }
+              { 
+                icon: "TrendingDown", 
+                title: "Вы пробовали разные планеры, но постоянно их бросали.", 
+                desc: "Потому что они не подходили под ваш ритм и задачи." 
+              },
+              { 
+                icon: "LayoutGrid", 
+                title: "У вас несколько ролей — работа, дом, хобби.", 
+                desc: "И всё это хочется держать в одном месте, а не в разных блокнотах." 
+              },
+              { 
+                icon: "Compass", 
+                title: "Вы хотите порядок без жёстких рамок.", 
+                desc: "Без чувства вины за «неидеальное» планирование." 
+              },
+              { 
+                icon: "Clock", 
+                title: "Вам важно, чтобы вещь служила долго.", 
+                desc: "И могла меняться вместе с вашей жизнью, а не устаревать за полгода." 
+              },
+              { 
+                icon: "DollarSign", 
+                title: "Вы не хотите переплачивать за лишнее.", 
+                desc: "И предпочитаете собирать под себя и свой бюджет." 
+              },
+              { 
+                icon: "HelpCircle", 
+                title: "Вы сомневаетесь, что сможете \"правильно\" выбрать идеальный планер на весь год.", 
+                desc: "И вам важно, чтобы можно было изменить решение позже." 
+              }
             ].map((item, i) => (
-              <Card key={i} className="p-8 bg-white hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-[#2E2E2C] rounded-full flex items-center justify-center mb-6">
-                  <Icon name={item.icon as any} className="text-white" size={28} />
+              <Card key={i} className="p-6 md:p-8 bg-white hover:shadow-xl transition-all hover:-translate-y-0.5 rounded-xl">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-[#2E2E2C] rounded-full flex items-center justify-center mb-5">
+                  <Icon name={item.icon as any} className="text-white" size={24} />
                 </div>
-                <h3 className="text-xl font-medium text-[#2E2E2C] mb-3">{item.title}</h3>
-                <p className="text-[#2E2E2C]/70 leading-relaxed">{item.desc}</p>
+                <p className="text-sm md:text-[15px] text-[#2E2E2C]/85 leading-relaxed">
+                  <span className="font-semibold text-[#2E2E2C] block mb-2">{item.title}</span>
+                  {item.desc}
+                </p>
               </Card>
             ))}
           </div>
