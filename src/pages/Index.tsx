@@ -23,27 +23,28 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/Баннер.jpg)' }}
-        >
-          <div className="absolute inset-0 bg-white/60"></div>
-        </div>
-        <div className="relative container mx-auto px-4 py-32 text-center max-w-4xl">
-          <div className="space-y-6 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-semibold text-[#2E2E2C] leading-tight">
-              Кожаные блокноты ручной работы
+        />
+        <div className="relative container mx-auto px-4 md:px-8 lg:px-16 py-32 max-w-7xl">
+          <div className="space-y-6 animate-fade-in max-w-2xl">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-[#2E2E2C] leading-tight uppercase">
+              СОБЕРИТЕ СВОЙ ИДЕАЛЬНЫЙ БЛОКНОТ.<br />
+              И МЕНЯЙТЕ НАПОЛНЕНИЕ,<br />
+              КОГДА МЕНЯЕТСЯ ЖИЗНЬ.
             </h1>
-            <p className="text-xl md:text-2xl text-[#2E2E2C]/90 leading-relaxed">
-              Создаём уникальные планеры и блокноты из натуральной кожи. Каждое изделие — это история, рассказанная руками мастера.
+            <p className="text-lg md:text-xl text-[#2E2E2C]/90 leading-relaxed">
+              Кожаные обложки и сменное наполнение ручной работы.<br />
+              Один блокнот вместо 10, который подстраивается под вас.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-lg px-8 py-6">
-                Выбрать блокнот
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-base px-8 py-6 uppercase tracking-wide">
+                СОБРАТЬ БЛОКНОТ
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-lg px-8 py-6">
-                Смотреть каталог
+              <Button size="lg" variant="outline" className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-base px-8 py-6 uppercase tracking-wide">
+                ГОТОВЫЕ РЕШЕНИЯ
               </Button>
             </div>
           </div>
