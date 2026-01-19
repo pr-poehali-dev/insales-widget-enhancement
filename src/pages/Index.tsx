@@ -43,7 +43,7 @@ export default function Index() {
           </div>
           <div className="animate-scale-in">
             <img 
-              src="https://cdn.poehali.dev/projects/74879c91-9831-4aa7-8d2a-b5b5b5071e3e/files/4445dc42-1fd0-4ea0-8276-86bbf0dcabc4.jpg" 
+              src="https://cdn.poehali.dev/files/Баннер.jpg" 
               alt="Кожаный блокнот" 
               className="rounded-lg shadow-2xl w-full"
             />
