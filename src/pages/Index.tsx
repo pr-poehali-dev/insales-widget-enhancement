@@ -116,7 +116,7 @@ export default function Index() {
       {/* Для кого блок */}
       <section className="w-screen relative left-1/2 right-1/2 -mx-[50vw] py-16 px-6 bg-[#ECE8E6]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#2E2E2C] text-center mb-12 md:mb-16">FinePlan подойдёт вам, если:</h2>
+          <h2 className="md:text-4xl font-semibold text-[#2E2E2C] text-center mb-12 md:mb-16 text-3xl">FinePlan подойдёт вам, если:</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
             {[
               { 
