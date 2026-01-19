@@ -23,30 +23,29 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-16 px-4">
-        <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <section className="relative min-h-screen flex items-center justify-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/Баннер.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-white/60"></div>
+        </div>
+        <div className="relative container mx-auto px-4 py-32 text-center max-w-4xl">
           <div className="space-y-6 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-semibold text-[#2E2E2C] leading-tight">
+            <h1 className="text-5xl md:text-7xl font-semibold text-[#2E2E2C] leading-tight">
               Кожаные блокноты ручной работы
             </h1>
-            <p className="text-lg text-[#2E2E2C]/80 leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#2E2E2C]/90 leading-relaxed">
               Создаём уникальные планеры и блокноты из натуральной кожи. Каждое изделие — это история, рассказанная руками мастера.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white">
+            <div className="flex flex-wrap gap-4 justify-center pt-4">
+              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-lg px-8 py-6">
                 Выбрать блокнот
               </Button>
-              <Button size="lg" variant="outline" className="border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white">
+              <Button size="lg" variant="outline" className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-lg px-8 py-6">
                 Смотреть каталог
               </Button>
             </div>
-          </div>
-          <div className="animate-scale-in">
-            <img 
-              src="https://cdn.poehali.dev/files/Баннер.jpg" 
-              alt="Кожаный блокнот" 
-              className="rounded-lg shadow-2xl w-full"
-            />
           </div>
         </div>
       </section>
