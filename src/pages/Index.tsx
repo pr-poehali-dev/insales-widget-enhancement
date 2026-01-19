@@ -23,27 +23,27 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="relative min-h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center pt-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-contain bg-right bg-no-repeat"
           style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/Баннер.jpg)' }}
         />
         <div className="relative container mx-auto px-4 md:px-8 lg:px-16 py-32 max-w-7xl">
-          <div className="space-y-6 animate-fade-in max-w-2xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-[#2E2E2C] leading-tight uppercase">
+          <div className="space-y-6 animate-fade-in max-w-xl">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#2E2E2C] leading-tight uppercase">
               СОБЕРИТЕ СВОЙ ИДЕАЛЬНЫЙ БЛОКНОТ.<br />
               И МЕНЯЙТЕ НАПОЛНЕНИЕ,<br />
               КОГДА МЕНЯЕТСЯ ЖИЗНЬ.
             </h1>
-            <p className="text-lg md:text-xl text-[#2E2E2C]/90 leading-relaxed">
+            <p className="text-base md:text-lg text-[#2E2E2C]/90 leading-relaxed">
               Кожаные обложки и сменное наполнение ручной работы.<br />
               Один блокнот вместо 10, который подстраивается под вас.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-base px-8 py-6 uppercase tracking-wide">
+              <Button size="lg" className="bg-[#2E2E2C] hover:bg-[#2E2E2C]/90 text-white text-sm px-6 py-5 uppercase tracking-wide">
                 СОБРАТЬ БЛОКНОТ
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-base px-8 py-6 uppercase tracking-wide">
+              <Button size="lg" variant="outline" className="border-2 border-[#2E2E2C] text-[#2E2E2C] hover:bg-[#2E2E2C] hover:text-white text-sm px-6 py-5 uppercase tracking-wide">
                 ГОТОВЫЕ РЕШЕНИЯ
               </Button>
             </div>
